@@ -1,0 +1,4 @@
+FROM almalinux:8
+ENV NAME=SANTHPRAKASH \
+    AGE=30 \
+    ADDRESS=USA
