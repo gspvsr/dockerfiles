@@ -9,3 +9,5 @@ we can build the images and we can push to any docker repository.
 docker build -t image-name:version .
 .....
 
+#### Filtering the lables - command
+docker images --filter <label=COURSE=DevOPS>
