@@ -11,3 +11,6 @@ docker build -t image-name:version .
 
 #### Filtering the lables - command
 docker images --filter <label=COURSE=DevOPS>
+
+### ENV - display the enviornment variables
+
