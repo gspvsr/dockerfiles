@@ -1,3 +1,3 @@
 FROM almalinux:8
-RUN workdir /tmp
+WORKDIR/tmp
 RUN echo "Hello Docker" > hello.txt
