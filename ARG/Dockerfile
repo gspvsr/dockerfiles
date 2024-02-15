@@ -1,4 +1,8 @@
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-8}
 # ARG variable before from will not work after from
-RUN echo "version pass the user is: ${version}"
+ARG COURSE
+ARG TRAINER
+ENV COURSE=${COURSE}
+ENV TRAINER=${TRAINER}
+RUN echo "Course: ${COURSE}, trainer is: ${TRAINER}"
