@@ -20,9 +20,14 @@ docker push <url>/<username>/<image-name>:<version>
 
 docker push docker.io/joindevops/qi:v1
 
-# removing all running docker continers directly.
+### removing all running docker continers directly.
 docker rm -f `docker ps -a -q`
 
-# removing all docker images directly.
+### removing all docker images directly.
 docker rm -f `docker images -a -q`
 
+### pulling the docker images directly.
+docker run -d -p 80:80 gspvsr/qi:v1
+
+### for checking the container sleep inside /tmp/
+docker exec -it <containerid> bash
