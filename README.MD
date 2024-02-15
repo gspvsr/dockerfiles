@@ -24,7 +24,7 @@ docker push docker.io/joindevops/qi:v1
 docker rm -f `docker ps -a -q`
 
 ### removing all docker images directly.
-docker rm -f `docker images -a -q`
+docker rmi -f `docker images -a -q`
 
 ### pulling the docker images directly.
 docker run -d -p 80:80 gspvsr/qi:v1
