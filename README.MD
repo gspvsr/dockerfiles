@@ -14,3 +14,15 @@ docker images --filter <label=COURSE=DevOPS>
 
 ### ENV - display the enviornment variables
 
+
+docker push :
+docker push <url>/<username>/<image-name>:<version>
+
+docker push docker.io/joindevops/qi:v1
+
+# removing all running docker continers directly.
+docker rm -f `docker ps -a -q`
+
+# removing all docker images directly.
+docker rm -f `docker images -a -q`
+
