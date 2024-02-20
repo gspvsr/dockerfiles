@@ -10,5 +10,6 @@ RUN yum install git -y \
     && yum install maven -y \
     && yum install gcc -y
 # Start nginx with daemon off
+RUN "Hello World"
 CMD ["nginx", "-g", "daemon off;"]
 
