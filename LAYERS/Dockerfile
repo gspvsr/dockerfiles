@@ -8,7 +8,7 @@ RUN echo "Hello, Welcome to Dockerfile. A way of creating own images" > /usr/sha
 
 RUN yum install git -y \
     && yum install maven -y \
-    && yum install maven -y
+    && yum install gcc -y
 # Start nginx with daemon off
 CMD ["nginx", "-g", "daemon off;"]
 
